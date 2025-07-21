@@ -29,4 +29,11 @@ int main(void) {
             } else {
                 printf("Error: Division by zero is undefined.\n");
             }
+	    break;
+        default:
+            printf("Error: Operator '%c' is not supported.\n", op);
+    }
+
+    return 0;
+}
 
