@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    char op;
+    char operator;
     double num1, num2, result;
 
     printf("Enter an operator (+, -, *, /): ");
@@ -9,7 +9,7 @@ int main(void) {
 
     printf("Enter two numbers: ");
     if (scanf("%lf %lf", &num1, &num2) != 2) return 1;
-    switch (op) {
+    switch (operator) {
         case '+':
             result = num1 + num2;
             printf("%.2lf %c %.2lf = %.2lf\n", num1, op, num2, result);
@@ -31,7 +31,7 @@ int main(void) {
             }
 	    break;
         default:
-            printf("Error: Operator '%c' is not supported.\n", op);
+            printf("Error: Operator '%c' is not supported.\n", operator);
     }
 
     return 0;
